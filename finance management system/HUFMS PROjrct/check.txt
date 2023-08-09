@@ -1,0 +1,72 @@
+echo'<tr><b>Are you sure you want to update this information?</b>
+                      <td width="170"><div align="left"><strong>Fname </strong></div></td>';
+                     echo' <td width="125" bgcolor="#CC6699">';
+					 echo' <div align="left">';
+					 echo'<input type="text" name="Fname" value='.$row['Fname'].' />';
+					    $Fname=$row['Fname'];
+					echo' </div></td> </tr>
+                    <tr>
+                      <td><div align="left">Middlename </div></td>';
+                     echo'  <td bgcolor="#CC6699"><div align="left">';
+                        echo'  <input type="text" name="Middlename" value='.$row['Middlename'].' />';
+						 $Middlename=$row['Middlename'];
+                        echo' </div></td>
+                    </tr>
+                    <tr>
+                      <td> <div align="left">Lastname </div></td>
+                      <td bgcolor="#CC6699"><div align="left">'; 
+                          echo'<input type="text" name="Lastname" value='.$row['Lastname'].' />';
+						  $Lastname=$row['Lastname'];
+                      echo' </div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="left">EmployeID</div></td>
+                      <td bgcolor="#CC6699"><div align="left">';
+                          echo' <input type="text" name="EmployeID" value='.$row['EmployeID'].' />';
+						  $EmployeID=$row['EmployeID'];
+                     echo' </div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="left">Salary </div></td>
+                      <td bgcolor="#CC6699"><div align="left">';
+                           echo'<input type="text" name="Salary" value='.$row['Salary'].' />';
+						  $Salary=$row['Salary'];
+                      echo'</div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="left">Annual</div></td>
+                      <td bgcolor="#CC6699"><div align="left">';
+                          echo' <input type="text" name="Annual" value='.$row['Annual'].' />';
+						  $Annual=$row['Annual'];
+                      echo'</div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="left">Allowance</div></td>
+                      <td bgcolor="#CC6699"><div align="left">';
+                          echo' <input type="text" name="Allowance" value='.$row['Allowance'].' />';
+						$Allowance= $row['Allowance'];
+                      echo'</div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="left">Eleveniz</div></td>
+                      <td bgcolor="#CC6699"><div align="left">';
+	                    echo' <input type="text" name="Eleveniz" value='.$row['Eleveniz'].' />';
+						  $Eleveniz=$row['Eleveniz'];
+                     echo'</div></td>
+                    </tr>
+                 </table>
+                  ';
+                  echo'
+                  <table width="304" border="0">
+                      <th width="137" scope="col"><input name="update" type="submit" class="style4"  
+					   value="Update" /></th>
+                      </tr>
+                 </table>
+                  </td>
+                 </tr>
+              </table>';
+
+		   exit;
+		    
+		  } 
+		  echo '</form>';

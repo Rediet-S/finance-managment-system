@@ -1,0 +1,128 @@
+<style type="text/css">
+<!--
+body {
+	background-color: #CC9999;
+}
+.style7 {font-weight: bold}
+.style11 {color: #000000; font-weight: bold; font-size: 24px; }
+.style12 {color: #000000}
+.style16 {
+	color: #CCCCCC;
+	font-weight: bold;
+}
+.style21 {font-size: 24px; color: #000000;}
+.style22 {
+	font-size: 18px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+
+<img src="haramaya.jpg" width="1202" height="156" />
+
+<table width="1210" border="0" bgcolor="#CC66CC">
+  <tr bgcolor="#CC9999">
+    <td width="87" height="36"><span class="style7"><strong><a href="home1.html" class="style12">Home</a></strong></span></td>
+    
+    <td width="102"><span class="style7"><strong><a href="register1.html" class="style12">Insert</a></strong></span></td>
+	 <td width="102"><span class="style7"><strong><a href="register2.html" class="style12">Insert2</a></strong></span></td>
+    <td width="122"><span class="style7"><strong><a href="Search.html" class="style12">Search</a></strong></span></td>
+    <td width="148"><span class="style7"><strong><a href="Delete.html" class="style12">Delete</a></strong></span></td>
+	
+    <td width="109"><span class="style16"><a href="Update.html"><span class="style12">Update</span></a></span></td>
+	<td width="109"><span class="style16"><a href="budget.html"><span class="style12">budget</span></a></span></td>
+	<td width="202"><strong><a href="Displaytable.php" class="style12">	generete payroll</a></strong></td>
+    <td width="202"><strong><a href="Displaytablebudget.php" class="style12">	Budget report</a></strong></td>
+	
+  </tr>
+</table>
+<form action="budget.php" method="post">
+  <table width="1210" height="580" border="0" bgcolor="#CC6699">
+    <tr>
+      <td width="10" height="576" bgcolor="#CC6699"><p align="center">&nbsp;</p>
+        <p align="center">&nbsp;</p>
+        <p align="center">&nbsp;</p>
+        <p align="center">&nbsp;</p>
+        <p align="center">&nbsp;</p>
+        <p align="center">&nbsp;</p>
+      <p align="center">&nbsp;</p></td>
+<td width="395" bgcolor="#CC6699"><table border="0" bgcolor="#CC6699">
+<p></p>
+            <p><b>BUDGET DIVISION FOR EACH SECTION</b></p>
+			<tr>
+			<td>College:
+              <select name="College">
+			  <option value="CCI">CCI</option>
+			  <option value="CBE">CBE</option>
+			  <option value="IOT">IOT</option>
+			  <option value="COA">COA</option>
+			  <option value="CVM">CVM</option>
+                <option value="CSSH">CSSH</option>
+                <option value="CNCS">CNCS</option>
+                <option value="CEBS">CEBS</option>
+                <option value="COL">COL</option>
+                
+				
+            </select></td>
+          </tr>
+            
+            <tr>
+             
+            <td height="44" bgcolor="#CC6699"><div align="right">Account code: </div></td>
+            <td><input type="text" name="Account_Code" size="20" /></td>
+          </tr>
+			<tr>
+            <td height="44" bgcolor="#CC6699"><div align="right">Approved Budget: </div></td>
+            <td><input type="text" name="Approved_Budget" size="20" /></td>
+          </tr>
+			
+			<tr>
+            <td height="44" bgcolor="#CC6699"><div align="right">Total seplement: </div></td>
+            <td><input type="text" name="Total_seplement" size="20" /></td>
+          </tr>
+			  <tr>
+            <td height="44" bgcolor="#CC6699"><div align="right">Total transfer add: </div></td>
+            <td><input type="text" name="Total_Transfer_Add" size="20" /></td>
+          </tr>
+          
+			  <tr>
+            <td height="44" bgcolor="#CC6699"><div align="right">Total transfer dedaction: </div></td>
+            <td><input type="text" name="Total_Transfer_Dedaction" size="20" /></td>
+          </tr>
+          <tr>
+            <td height="44" bgcolor="#CC6699"><div align="right">Current monthly expenditure : </div></td>
+            <td><input type="text" name="Current_Monthly_Expenditure" size="20" /></td>
+          </tr>
+            
+         <tr>
+            <td height="44" bgcolor="#CC6699"><div align="right">Year to date expenditure : </div></td>
+            <td><input type="text" name="Year_To_Date_Expenditure" size="20" /></td>
+          </tr>
+		  
+        <div align="left">
+          <p>&nbsp;</p>
+          <table width="542" border="0" bordercolor="#CC66CC">
+            <tr>
+              <td width="201" height="34" bgcolor="#CC6699">
+                <div align="right">
+                  <input name="Submit" type="submit" class="style11" value="Save" />
+                </div></td>
+              <td width="331" bordercolor="#FF0000" bgcolor="#CC6699">
+                
+                <div align="center">
+                  <input name="Submit2" type="reset" class="style11" value="Cancel">
+                </div></td>
+            </tr>
+          </table>
+          
+    </tr>
+  </table>
+</form>
+          
+
+</body>
+
+</html>

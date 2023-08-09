@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+ function validate()
+  {
+      var testcodesearch =/^([a-z]|[A-Z]| )*$/;
+      var EmployeID = document.Searchform.idsearch.value;
+	  if(EmployeID == "idsearch" || EmployeID == ""){
+          alert("Enter EmployeID");
+		  return false;
+	  }
+	  if(testcodesearch.test(EmployeID)){
+     	   alert("Enter  EmployeID Number");
+		   return false;
+	  }
+  }
+</script>
+</head>
+<body bgcolor="#CC9999" text="blue">
+
+<fieldset>
+<legend><h2><u>Update Payroll Information</U></h2></legend>
+
+<form name="Searchform" action="fmsupdate.php" method ="POST" onSubmit="return validate();">
+<br><br><br><br>
+
+<br>
+  EmployeID: &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="idsearch" size="37">
+  
+ <input type="submit" value="Search" size="50">
+ <br><br><br><br><br><br><br><br><br><br><br><br>
+ <br><br><br><br>
+ 
+</fieldset>
+ </form>
+ <body></html>

@@ -1,0 +1,171 @@
+  /*
+      if(!$Employee_ID)
+      {
+     echo' <img src="HU.jpg" width="1260" height="139" />
+    <table width="1260" border="0">
+  <tr bgcolor="#CC66CC" class="style2">
+    <td width="96" height="35"><a href="Home.html" class="style4">Home</a></td>
+    <td width="64"><a href="About.html" class="style4">About</a></td>
+    <td width="81"><a href="Contact.html" class="style4">Contact</a></td>
+    <td width="102"><a href="Structure.html" class="style4">Structure</a></td>
+    <td width="62"><a href="Register.html" class="style4">Insert</a></td>
+    <td width="85"><a href="Search.html" class="style4">Search</a></td>
+    <td width="93"><a href="Delete.html" class="style4">Delete</a></td>
+    <td width="118"><a href="Update.html" class="style4">Update</a></td>
+    <td width="149"><a href="Display.php" class="style4">Display all</a></td>
+    <td width="228"><a href="Displaytable.php" class="style4">Display table of content</a></td>
+  </tr>
+</table>
+<table width="1260" border="0" bordercolor="#CC6699" bgcolor="#CC6699">
+  <tr>
+    <td width="236" bgcolor="#CC6699">&nbsp;</td>
+    <td width="528" bgcolor="#CC6699"><table width="392" border="0">';
+echo '<h1>Please Enter primary key correctly!! </h1>';
+      exit;
+      }
+      $username = 'root';
+      $password = '';
+      $hostname = 'localhost'; 
+      //connection to the database
+      $dbhandle = mysql_connect($hostname, $username, $password);
+      $selected = mysql_select_db("hufms",$dbhandle);
+      $query="insert into payrollsystem values('".$Employee_ID."','".$FName."','".$MName."','".$LName."','".$Educational_Status."','".$Sex."','".$Age."','".$Address."','".$Total_Alowance."','".$Pension."','".$Other_Dedaction."','".$Total_Dedaction."','".$Basic_Salary."','".$Overtime."','".$Income_Tax_Rate."','".$Grossearning."','".$Netpay."')";
+      $result=mysql_query($query);
+      if($result)
+      {
+      
+      echo' <img src="HU.jpg" width="1260" height="139" />
+    <table width="1260" border="0">
+  <tr bgcolor="#CC66CC" class="style2">
+    <td width="96" height="35"><a href="Home.html" class="style4">Home</a></td>
+    <td width="64"><a href="About.html" class="style4">About</a></td>
+    <td width="81"><a href="Contact.html" class="style4">Contact</a></td>
+    <td width="102"><a href="Structure.html" class="style4">Structure</a></td>
+    <td width="62"><a href="register1.html" class="style4">Insert</a></td>
+    <td width="85"><a href="Search.html" class="style4">Search</a></td>
+    <td width="93"><a href="Delete.html" class="style4">Delete</a></td>
+    <td width="118"><a href="Update.html" class="style4">Update</a></td>
+    <td width="228"><a href="Displaytable.php" class="style4">Payroll report</a></td>
+  </tr>
+</table>
+<table width="1119" border="0" bordercolor="#CC6699" bgcolor="#CC6699">
+  <tr>
+    <td width="236" bgcolor="#CC6699">&nbsp;</td>
+    <td width="528" bgcolor="#CC6699"><table width="392" border="0">';
+	echo'<b>The information inserted into the database is.</b>';
+      echo'<tr>
+        <td width="86">Employee ID </td>
+        <td width="144">'.$Employee_ID.'</td>
+      
+      </tr>
+      <tr>
+        <td height="33">&nbsp;</td>
+        <td>First name </td>
+        <td>'.$FName.'</td>
+      </tr>
+      <tr>
+        <td height="31">&nbsp;</td>
+        <td> Father name </td>
+        <td>'.$MName.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Grand father</td>
+        <td>'.$LName.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Educational status </td>
+        <td>'.$Educational_Status.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Sex</td>
+        <td>'.$Sex.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Age</td>
+        <td>'.$Age.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Address</td>
+        <td>'.$Address.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Total allowance</td>
+        <td>'.$Total_Alowance.'</td>
+      </tr>
+      <tr>
+        <td height="31">&nbsp;</td>
+        <td>Pension</td>
+        <td>'.$Pension.'</td>
+      </tr>
+      <tr>
+        <td height="27">&nbsp;</td>
+        <td>Other deduction </td>
+        <td>'.$Other_Dedaction.'</td>
+      </tr>
+      <tr>
+        <td height="32">&nbsp;</td>
+        <td>Total deduction </td>
+        <td>'.$Total_Dedaction.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Basic salary</td>
+        <td>'.$Basic_Salary.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Over time </td>
+        <td>'.$Overtime.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Income tax </td>
+        <td>'.$Income_Tax_Rate.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Gross earning </td>
+        <td>'.$Grossearning.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Netpay</td>
+        <td>'.$Netpay.'</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p></td>
+    <td width="341" bgcolor="#CC6699">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;    </p>
+';
+}
+else
+{
+ echo' <img src="HU.jpg" width="1260" height="139" />
+    <table width="1260" border="0">
+  <tr bgcolor="#CC66CC" class="style2">
+    <td width="96" height="35"><a href="Home.html" class="style4">Home</a></td>
+    <td width="64"><a href="About.html" class="style4">About</a></td>
+    <td width="81"><a href="Contact.html" class="style4">Contact</a></td>
+    <td width="102"><a href="Structure.html" class="style4">Structure</a></td>
+    <td width="62"><a href="register1.html" class="style4">Insert</a></td>
+    <td width="85"><a href="Search.html" class="style4">Search</a></td>
+    <td width="93"><a href="Delete.html" class="style4">Delete</a></td>
+    <td width="118"><a href="Update.html" class="style4">Update</a></td>
+    <td width="228"><a href="Displaytable.php" class="style4">payroll report</a></td>
+  </tr>
+</table>
+<table width="1260" border="0" bordercolor="#CC6699" bgcolor="#CC6699">
+  <tr>
+    <td width="236" bgcolor="#CC6699">&nbsp;</td>
+    <td width="528" bgcolor="#CC6699"><table width="392" border="0">';
+echo '<h1>The record is not inserted into the database</h1>';
+}
+*/

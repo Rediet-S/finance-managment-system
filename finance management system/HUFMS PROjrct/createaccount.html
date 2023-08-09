@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Sign up information</title>
+<body bgcolor="#CC9999">
+<script type="text/javascript">
+function checkName(form)
+{
+  var eobj=document.getElementById('realnameerror');
+  var sRealName = form.accountname.value;
+  var oRE = /^[a-zA-Z]+$/;
+  var error=false;
+  eobj.innerHTML='';
+  if (sRealName == '') {
+   error='Error: accountname cannot be blank!';
+   form.accountname.focus();
+  }
+  else if (sRealName.length < 2) 
+{
+    error="accountname should be atleast 2 characters long";
+  }
+  else if (!oRE.test(sRealName))
+{
+   error="Please insert only letters.";
+  }
+  if (error)
+{
+   form.accountname.focus();
+   eobj.innerHTML=error;
+   return false;
+  }
+  return true;
+ }
+
+function validatePwd(form) /* password & retype-password verification */
+{       
+ var eobj1=document.getElementById('passworderror');
+ var eobj2=document.getElementById('password2error');
+ var minLength=2;
+ var invalid=' ';
+ var pw1=form.password.value;
+ var pw2=form.cpassword.value;
+ var error=false;
+ eobj1.innerHTML='';
+ eobj2.innerHTML='';
+ if (pw1.length<1)
+ {
+  error='Please enter your password.';
+ }
+ else if (pw1.length < minLength)
+ {
+  error='Your password must be at least ' + minLength + ' characters long. Try again.';
+ }
+ else if (pw1.indexOf(invalid) > -1)
+ {
+  error='Sorry, spaces are not allowed.';
+ }
+ if (error)
+ {
+  form.password.focus();
+  eobj1.innerHTML=error;
+  return false
+ }
+ if (pw1 != pw2)
+ {
+  eobj2.innerHTML=' passwords not matching.Please re-enter your password.';
+  return false;
+ }
+ return true;
+}
+function validate() 
+ {
+ var form = document.forms['form'];
+ var ary=[checkName,validatePwd];
+ var rtn=true;
+ var z0=0;
+ for (var z0=0;z0<ary.length;z0++)
+{
+  if (!ary[z0](form))
+  {
+    rtn=false;
+  }
+ }
+ return rtn;
+}
+</script>
+</head>
+
+<table border="0" align="center"cellpadding="15" cellspacing="10">
+<caption align="center">
+<h2>
+<b>
+<i>Account Form:</h2>
+</b>
+</i>
+</caption>
+<form action="createaccount.php" method="post" name="form" onSubmit="return validate()">
+<tr>
+<td>Account name :</td>
+   <td> 
+   <input type="text" name="accountname">
+   <span id="realnameerror" /> 
+    </td>
+	</tr>
+	
+	<tr>
+	<td>Password:</td>
+	<td> 
+	<input type="password" name="password" >
+	<span id="passworderror" /> 
+    </td>
+	</tr>
+	<tr>
+	<td>Confirm password:</td>
+	<td>
+	<input type="password" name="cpassword" >
+	<span id="password2error"/> 
+    </td>
+	</tr>
+	<tr>
+	<td>
+	<input type="submit" value="create"> 
+	<input type="reset" value="Clear">
+	</td>
+	</tr>
+  </form>
+</body>
+</html>

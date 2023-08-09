@@ -1,0 +1,11 @@
+\t Abdi   \t Mehari  \t Abereha \t 5001 \t Employee \t 2250  \t 0   \t 0   \t 0  \t 0      \t 0
+\t Abate  \t Hailu   \t Shibeshi\t 5002 \t Employee \t 2685  \t 0   \t 0   \t 0  \t 0      \t 0
+\t Abayneh\t Lemma   \t yimer   \t 5003 \t Employee \t 1114  \t 0   \t 0   \t 89 \t 0      \t 0
+\t Abdela \t Yuya    \t Usman   \t 5004 \t Head     \t 4605  \t 250 \t 500 \t 0  \t 422.13 \t 0
+\t Abdeta \t Guta    \t Wakoya  \t 5005 \t Employee \t 3820  \t 0   \t 500 \t 0  \t 0      \t 0
+\t Abdi   \t Abdela  \t Ahmed   \t 5006 \t Dean     \t 1644  \t 0   \t 200 \t 0  \t 0      \t 0
+\t Abdi   \t Abdulahi\t beker   \t 5007 \t Employee \t 957   \t 0   \t 0   \t 221\t 0      \t 0
+\t Abdi   \t Beker   \t Weday   \t 5008 \t Employee \t 957   \t 0   \t 0   \t 0  \t 0      \t 0
+\t Abdi   \t Jibril  \t Ali     \t 5009 \t Employee \t 4605  \t 0   \t 0   \t 176\t 0      \t 460.5
+\t Abdi   \t Mohammed\t Sani    \t 5010 \t Employee \t 861   \t 0   \t 0   \t 143\t 0      \t 0
+\t Abdi   \t nemera  \t Emana   \t 5011 \t Employee \t 4605  \t 0   \t 500 \t 0  \t 0      \t 0

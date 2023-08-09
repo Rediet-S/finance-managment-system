@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+ function validate()
+  {
+      var testcodesearch =/^([a-z]|[A-Z]| )*$/;
+      var Account_Code = document.Searchform.codesearch.value;
+	  if(Account_Code == "codesearch" || Account_Code == ""){
+          alert("Enter Account code");
+		  return false;
+	  }
+	  if(testcodesearch.test(Account_Code)){
+     	   alert("Enter  Account code Number");
+		   return false;
+	  }
+  }
+</script>
+</head>
+<body bgcolor="#CC9999" text="blue">
+
+<fieldset>
+<legend><h2><u>Search budget Information</U></h2></legend>
+
+<form name="Searchform"action="searchbd.php" method ="Post"onSubmit="return validate();">
+<br><br><br><br>
+
+<br>
+ Account_Code: &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="codesearch" size="37">
+  
+ <input type="submit" value="Search" size="50">
+ <br><br><br><br><br><br><br><br><br><br><br><br>
+ <br><br><br><br>
+ 
+</fieldset>
+ </form>
+ <body></html>
